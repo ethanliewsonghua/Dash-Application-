@@ -14,7 +14,7 @@ def get_key_from_value(dictionary, target_value):
     return None
 
 app = Dash(__name__)
-
+server = app.server
 # -- Import and clean data (importing csv into pandas)
 df = pd.read_excel("FAC Hourly Data.xlsx")
 
